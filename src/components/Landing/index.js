@@ -9,32 +9,46 @@ import ContactUs from "./contactUs";
 import Footer from "./footer";
 import "../../assets/css/bootstrap.min.css";
 import "../../assets/css/agency.min.css";
+import image1 from "../../assets/img/about/1.jpg";
+import roof from "../../assets/img/cards/roof.jpeg";
+import blueprint from "../../assets/img/cards/blueprint.jpeg";
+import walls from "../../assets/img/cards/walls.jpg";
+import floor1 from "../../assets/img/cards/floor1.jpeg";
+import bricks from "../../assets/img/cards/bricks.jpg";
+import xyz from "../../assets/img/cards/xyz.jpeg";
 
 function Landing() {
   const addinsCardsLinks = [
     {
       title: "Addin Form",
-      caption: "Illustration",
+      caption: "Help Construction drawings and specifications",
+      picture: blueprint,
     },
     {
-      title: "Explore",
-      caption: "Graphic Design",
+      title: "Roof type selector",
+      caption: "Use the wall type selector to specify the type of roof",
+      picture: roof,
     },
     {
-      title: "Finish",
-      caption: "Identity",
+      title: "Building dimensions",
+      caption: "Building horizontal dimensions are from outer edge of wall",
+      picture: walls,
     },
     {
-      title: "Lines",
-      caption: "Branding",
+      title: "Slab",
+      caption: "Use the slab checkbox to create the default floor (slab)",
+      picture: floor1,
     },
     {
-      title: "Southwest",
-      caption: "Website Design",
+      title: "Wall type selector",
+      caption: "Use the wall type selector to specify the type of wall",
+      picture: bricks,
     },
     {
-      title: "Window",
-      caption: "Photography",
+      title: "Project base point (PBP)",
+      caption:
+        "Use the axes XYZ of PBP to locate the building in the Revit world",
+      picture: xyz,
     },
   ];
 

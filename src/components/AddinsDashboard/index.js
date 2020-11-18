@@ -79,19 +79,13 @@ class Addins extends Component {
   handleCreateRequisition() {
     const uid = this.state.id;
     const { inputsForm } = this.state;
-    const addin = this.state.addin;
+
     let newAddinKey = this.props.firebase.db.ref().child("addins").push().key;
     let updates = {};
     updates["/addins/" + newAddinKey] = inputsForm;
     updates["/user-addins/" + uid + "/" + newAddinKey] = inputsForm;
     return this.props.firebase.db.ref().update(updates);
   }
-
-  // .then(_ => {
-  // this.setState({ inputsForm: "" });
-  // })
-  // .catch(error => console.log(error.message));
-  // }
 
   handleOptionChange = (changeEvent) => {
     this.setState({
@@ -131,13 +125,14 @@ class Addins extends Component {
           </button>
           <br />
           <br />
+
           {/* <-- Table --> */}
+          <h3> Add-in Requests List: </h3>
 
           <table className="table table-bordered">
             <thead>
               <tr>
                 <th>Addin Tester </th>
-
                 <th>Title </th>
                 <th>Category</th>
                 <th>Discipline</th>
@@ -194,7 +189,7 @@ class Addins extends Component {
                 <label>Addin Title: </label>
                 <br />
                 <input
-                  type="text"
+                  type="textarea"
                   value={this.state.inputsForm.title}
                   className="form-control"
                   name="title"
@@ -213,7 +208,7 @@ class Addins extends Component {
                 <br />
                 {/* <-- Radio button --> */}
                 <form onSubmit={this.handleCheckSubmit}>
-                  <h4>discipline:</h4>
+                  <h4>Discipline:</h4>
                   <div className="radio-check">
                     <label>
                       <br />
@@ -247,23 +242,6 @@ class Addins extends Component {
                       Civil
                     </label>
                   </div>
-                  <div className="radio-check">
-                    <label>
-                      <br />
-                      <input
-                        type="radio"
-                        name="discipline"
-                        value="Electrical"
-                        checked={
-                          this.state.inputsForm.selectedOption === "Electrical "
-                        }
-                        className="form-control"
-                        onChange={this.handleOptionChange}
-                      />
-                      Electrical
-                    </label>
-                  </div>
-                  Selected option is: {this.state.inputsForm.selectedOption}
                 </form>
                 {/* <-- Radio button --> */}
                 <br />
@@ -333,7 +311,7 @@ class Addins extends Component {
                   type="text"
                   value={this.state.inputsForm.category}
                   className="form-control"
-                  name="title"
+                  name="category"
                   onChange={this.handleChange}
                 />
                 <br />
@@ -374,23 +352,6 @@ class Addins extends Component {
                       Civil
                     </label>
                   </div>
-                  <div className="radio-check">
-                    <label>
-                      <br />
-                      <input
-                        type="radio"
-                        name="discipline"
-                        value="Electrical"
-                        checked={
-                          this.state.inputsForm.selectedOption === "Electrical "
-                        }
-                        className="form-control"
-                        onChange={this.handleOptionChange}
-                      />
-                      Electrical
-                    </label>
-                  </div>
-                  Selected option is: {this.state.inputsForm.selectedOption}
                 </form>
                 {/* <-- Radio button --> */}
                 <br />

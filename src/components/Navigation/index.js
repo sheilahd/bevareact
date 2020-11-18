@@ -17,13 +17,15 @@ const Navigation = () => (
 const NavigationAuth = ({ authUser }) => (
   <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div className="container">
-      <Nav.Item
-        as="li"
-        className="navbar-brand js-scroll-trigger"
-        href="#page-top"
-      >
-        <Link to={ROUTES.HOME}>BEVA</Link>
-      </Nav.Item>
+      <div>
+        <Nav.Item
+          as="li"
+          className="navbar-brand js-scroll-trigger"
+          href="#page-top"
+        >
+          <Link to={ROUTES.HOME}>BEVA </Link>
+        </Nav.Item>
+      </div>
       <button
         className="navbar-toggler navbar-toggler-right"
         type="button"
@@ -38,41 +40,18 @@ const NavigationAuth = ({ authUser }) => (
       </button>
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav text-uppercase ml-auto">
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#services">
-              Services
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#addinsCards">
-              Add-ins
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#about">
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#team">
-              Team
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link js-scroll-trigger" href="#contact">
-              Contact
-            </a>
-          </li>
-
           {!!authUser.roles[ROLES.ADMIN] && (
-            <Nav.Item as="li" className="nav-link js-scroll-trigger">
-              <Link to={ROUTES.ADMIN}>Admin</Link>
-            </Nav.Item>
+            <li className="nav-item">
+              <Nav.Item as="li" className="nav-link js-scroll-trigger">
+                <Link to={ROUTES.ADMIN}>Admin</Link>
+              </Nav.Item>
+            </li>
           )}
-
-          <Nav.Item as="li" className="nav-link js-scroll-trigger">
-            <Link to={ROUTES.ADDINSDASHBOARD}>Addins Table</Link>
-          </Nav.Item>
+          <li className="nav-item">
+            <Nav.Item as="li" className="nav-link js-scroll-trigger">
+              <Link to={ROUTES.ADDINSDASHBOARD}>Addins Table</Link>
+            </Nav.Item>
+          </li>
 
           <Nav.Item as="li" className="nav-link js-scroll-trigger">
             <SignOutButton />
@@ -91,7 +70,7 @@ const NavigationNonAuth = () => (
         className="navbar-brand js-scroll-trigger"
         href="#page-top"
       >
-        <Link to={ROUTES.LANDING}>BEVA</Link>
+        <Link to={ROUTES.LANDING}>BEVA </Link>
       </Nav.Item>
       <button
         className="navbar-toggler navbar-toggler-right"
@@ -117,6 +96,7 @@ const NavigationNonAuth = () => (
               Add-ins
             </a>
           </li>
+
           <li className="nav-item">
             <a className="nav-link js-scroll-trigger" href="#about">
               About
@@ -134,7 +114,9 @@ const NavigationNonAuth = () => (
           </li>
 
           <Nav.Item as="li" className="nav-link js-scroll-trigger">
-            <Link to={ROUTES.SIGN_IN}>Sign In</Link>
+            <Link to={ROUTES.SIGN_IN} className="btn btn-primary btn-md">
+              Sign In
+            </Link>
           </Nav.Item>
         </ul>
       </div>

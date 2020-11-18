@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Switch, Route, Link } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import { compose } from "recompose";
 
 import { withFirebase } from "../Firebase";
@@ -104,20 +104,20 @@ class UserListBase extends Component {
             <br />
 
             <span>
-              <Link
+              {/* <Link
                 to={{
                   pathname: `${ROUTES.ADMIN}/${user.uid}`,
                   state: { user },
                 }}
               >
                 Details
-              </Link>
+              </Link> */}
             </span>
             <table className="table table-bordered">
               <thead>
                 <tr>
                   <th> Request Title </th>
-                  <th> Discipline</th>
+                  <th> Category</th>
                   <th> Description</th>
                 </tr>
               </thead>
@@ -127,7 +127,7 @@ class UserListBase extends Component {
                     return (
                       <tr>
                         <td> {addin.title} </td>
-                        <td>{addin.discipline}</td>
+                        <td>{addin.category}</td>
                         <td>{addin.description}</td>
                       </tr>
                     );

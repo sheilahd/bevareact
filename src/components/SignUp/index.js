@@ -142,7 +142,11 @@ class SignUpFormBase extends Component {
             </label>
 
             <br />
-            <button disabled={isInvalid} type="submit">
+            <button
+              className="btn btn-primary btn-md"
+              disabled={isInvalid}
+              type="submit"
+            >
               Sign Up
             </button>
 

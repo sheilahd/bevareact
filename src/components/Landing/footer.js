@@ -22,7 +22,7 @@ const Footer = () => {
               </li>
               <li className="list-inline-item">
                 <a href="#something">
-                  <i className="fa fa-linkedin-in"></i>
+                  <i className="fa fa-linkedin"></i>
                 </a>
               </li>
             </ul>

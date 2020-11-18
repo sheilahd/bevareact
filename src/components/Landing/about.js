@@ -6,7 +6,8 @@ const About = () => {
           <div className="col-lg-12 text-center">
             <h2 className="section-heading text-uppercase">About</h2>
             <h3 className="section-subheading text-muted">
-              Lorem ipsum dolor sit amet consectetur.
+              A family owned small business partnership providing code and web
+              development for all business trades.
             </h3>
           </div>
         </div>
@@ -15,11 +16,12 @@ const About = () => {
             <ul className="timeline">
               <li>
                 <div className="timeline-image">
-                  <img
-                    className="rounded-circle img-fluid"
-                    src="img/about/1.jpg"
-                    alt=""
-                  />
+                  <h4>
+                    Full
+                    <br />
+                    Services
+                    <br />
+                  </h4>
                 </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
@@ -28,21 +30,20 @@ const About = () => {
                   </div>
                   <div className="timeline-body">
                     <p className="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Sunt ut voluptatum eius sapiente, totam reiciendis
-                      temporibus qui quibusdam, recusandae sit vero unde, sed,
-                      incidunt et ea quo dolore laudantium consectetur!
+                      A family owned small business partnership providing code
+                      and web development for all business trades.
                     </p>
                   </div>
                 </div>
               </li>
               <li className="timeline-inverted">
                 <div className="timeline-image">
-                  <img
-                    className="rounded-circle img-fluid"
-                    src="assets/img/about/1.jpg"
-                    alt=""
-                  />
+                  <h4>
+                    Architecture
+                    <br />
+                    Engineering
+                    <br />
+                  </h4>
                 </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
@@ -51,21 +52,22 @@ const About = () => {
                   </div>
                   <div className="timeline-body">
                     <p className="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Sunt ut voluptatum eius sapiente, totam reiciendis
-                      temporibus qui quibusdam, recusandae sit vero unde, sed,
-                      incidunt et ea quo dolore laudantium consectetur!
+                      Beva Code team branch focusing on custom support code
+                      development for the AEC Software industry. Across the
+                      manufacturing, architecture, engineering, building and
+                      construction industries
                     </p>
                   </div>
                 </div>
               </li>
               <li>
                 <div className="timeline-image">
-                  <img
-                    className="rounded-circle img-fluid"
-                    src="assets/img/about/3.jpg"
-                    alt=""
-                  />
+                  <h4>
+                    Library
+                    <br />
+                    Development
+                    <br />
+                  </h4>
                 </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
@@ -74,33 +76,32 @@ const About = () => {
                   </div>
                   <div className="timeline-body">
                     <p className="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Sunt ut voluptatum eius sapiente, totam reiciendis
-                      temporibus qui quibusdam, recusandae sit vero unde, sed,
-                      incidunt et ea quo dolore laudantium consectetur!
+                      Application Development, Consulting Services, Custom
+                      Development, Software Integration,Training,
+                      Content/Library Development and Data Integration
                     </p>
                   </div>
                 </div>
               </li>
               <li className="timeline-inverted">
                 <div className="timeline-image">
-                  <img
-                    className="rounded-circle img-fluid"
-                    src="img/about/4.jpg"
-                    alt=""
-                  />
+                  <h4>
+                    Data
+                    <br />
+                    Integration
+                    <br />
+                  </h4>
                 </div>
                 <div className="timeline-panel">
                   <div className="timeline-heading">
-                    <h4>July 2014</h4>
+                    <h4>2020</h4>
                     <h4 className="subheading">Phase Two Expansion</h4>
                   </div>
                   <div className="timeline-body">
                     <p className="text-muted">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Sunt ut voluptatum eius sapiente, totam reiciendis
-                      temporibus qui quibusdam, recusandae sit vero unde, sed,
-                      incidunt et ea quo dolore laudantium consectetur!
+                      Code and web development for all business trades.Across
+                      all industries, we give you the power to automate and
+                      accelerate results.
                     </p>
                   </div>
                 </div>

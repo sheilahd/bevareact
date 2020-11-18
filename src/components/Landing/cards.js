@@ -1,76 +1,67 @@
+import image1 from "../../assets/img/cards/1.jpg";
+
 export default ({ addinsCardsLinks }) => {
   return (
     <section className="bg-light page-section" id="addinsCards">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-12 text-center">
-            <h2 className="section-heading text-uppercase">
-              Revit Add-ins Cards
-            </h2>
-            <h3 className="section-subheading text-muted">
-              Currently on Development
-            </h3>
-          </div>
+        <div className="text-center">
+          <h2 className="section-heading text-uppercase">
+            Revit Add-ins Cards
+          </h2>
+          <h3 className="section-subheading text-muted">
+            Currently on Development
+          </h3>
         </div>
+
         <div className="row">
           {addinsCardsLinks &&
-            addinsCardsLinks.map(({ title, caption, img }, index) => (
+            addinsCardsLinks.map(({ title, caption, picture }, index) => (
               <div className="col-md-4 col-sm-6 addinsCards-item">
                 <a
                   className="addinsCards-link"
                   data-toggle="modal"
                   href="#addinsCardsModal1"
                 >
-                  <div className="addinsCards-hover">
-                    <div className="addinsCards-hover-content">
-                      <i className="fa fa-plus fa-3x"></i>
-                    </div>
-                  </div>
-                  <img
-                    className="img-fluid"
-                    src={`https://unsplash.it/350/140/?${Math.floor(
-                      Math.random(0, 100) * 100
-                    )}`}
-                    alt="addinsCards_img"
-                  />
+                  <img className="img-fluid" src={picture} />
                 </a>
                 <div className="addinsCards-caption">
-                  <h4>{title}</h4>
+                  <h4 className="text-center">{title}</h4>
                   <p className="text-muted">{caption}</p>
                 </div>
               </div>
             ))}
+          {/* <-- on production1 -->  */}
 
           <div class="col-lg-4 col-sm-6">
-            <div class="portfolio-item">
+            <div class="addinsCards-item">
               <a
-                class="portfolio-link"
+                class="addinsCards-link"
                 data-toggle="modal"
-                href="#portfolioModal6"
+                href="#addinsCardsModal6"
               >
-                <div class="portfolio-hover">
-                  <div class="portfolio-hover-content">
-                    <i class="fas fa-plus fa-3x"></i>
+                <div class="addinsCards-hover">
+                  <div class="addinsCards-hover-content">
+                    <i class="fa fa-plus fa-3x"></i>
                   </div>
                 </div>
-                <img
-                  class="img-fluid"
-                  src="assets/img/portfolio/06-thumbnail.jpg"
-                  alt=""
-                />
+                <img class="img-fluid" src={image1} alt="Logo" />
               </a>
-              <div class="portfolio-caption">
-                <div class="portfolio-caption-heading">Window</div>
-                <div class="portfolio-caption-subheading text-muted">
-                  Photography
+              <div class="addinsCards-caption">
+                <h4 className="text-center"> EZBuild</h4>
+                <h5 className="text-center text-muted">
+                  Currently on Testing:
+                </h5>
+                <div class="addinsCards-caption-subheading text-muted">
+                  Creates a new building by collecting data from the user in a
+                  form.
                 </div>
               </div>
             </div>
           </div>
 
           <div
-            class="portfolio-modal modal fade"
-            id="portfolioModal6"
+            class="addinsCards-modal modal fade"
+            id="addinsCardsModal6"
             tabindex="-1"
             role="dialog"
             aria-hidden="true"
@@ -78,40 +69,49 @@ export default ({ addinsCardsLinks }) => {
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
-                  <img src="assets/img/close-icon.svg" alt="Close modal" />
+                  <button
+                    class="btn btn-primary"
+                    data-dismiss="modal"
+                    type="button"
+                  >
+                    <i class="fa fa-times mr-1"></i>
+                  </button>
                 </div>
                 <div class="container">
                   <div class="row justify-content-center">
                     <div class="col-lg-8">
                       <div class="modal-body">
-                        <h2 class="text-uppercase">Project Name</h2>
+                        <h4> EZBuild</h4>
                         <p class="item-intro text-muted">
-                          Lorem ipsum dolor sit amet consectetur.
+                          Creates a new building by collecting data from the
+                          user in a form.
                         </p>
-                        <img
-                          class="img-fluid d-block mx-auto"
-                          src="assets/img/portfolio/06-full.jpg"
-                          alt=""
-                        />
+                        <img class="img-fluid d-block mx-auto" src={image1} />
                         <p>
-                          Use this area to describe your project. Lorem ipsum
-                          dolor sit amet, consectetur adipisicing elit. Est
-                          blanditiis dolorem culpa incidunt minus dignissimos
-                          deserunt repellat aperiam quasi sunt officia expedita
-                          beatae cupiditate, maiores repudiandae, nostrum,
-                          reiciendis facere nemo!
+                          Roof type selector Use the wall type selector to
+                          specify the type of roof, such as ' Generic -12" ' or
+                          use the default choice and do the changes later. Slab
+                          Use the slab checkbox to create the default floor
+                          (slab) ' Generic -12" ' at the specified height Z-axis
+                          in Project Base Point (PBP). Project base point (PBP)
+                          Use the axes XYZ of PBP to locate the building in the
+                          Revit world. PBP will be placed at the lower left
+                          corner of the building and at the top of the slab.
+                          Building dimensions Building horizontal dimensions are
+                          from outer edge of wall to outer edge of wall.
+                          Building height is from top of slab to top of wall.
                         </p>
                         <ul class="list-inline">
                           <li>Date: January 2020</li>
-                          <li>Client: Window</li>
-                          <li>Category: Photography</li>
+                          <li>Client: Hazen</li>
+                          <li>Category: Civil Enginering</li>
                         </ul>
                         <button
                           class="btn btn-primary"
                           data-dismiss="modal"
                           type="button"
                         >
-                          <i class="fas fa-times mr-1"></i>
+                          <i class="fa fa-times mr-1"></i>
                           Close Project
                         </button>
                       </div>

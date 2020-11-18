@@ -31,7 +31,7 @@ const ContactUs = () => {
                       className="form-control"
                       id="email"
                       type="email"
-                      placeholder="Your Email *"
+                      placeholder="sheila.hdez@gmail.com"
                       required="required"
                       data-validation-required-message="Please enter your email address."
                     />

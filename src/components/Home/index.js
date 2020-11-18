@@ -10,7 +10,7 @@ import Services from "../Landing/services";
 import Team from "../Landing/team";
 import ContactUs from "../Landing/contactUs";
 import Footer from "../Landing/footer";
-import AddinsCardsLinks from "../Landing/cards";
+
 import "../../assets/css/bootstrap.min.css";
 
 function HomePage() {
@@ -18,7 +18,7 @@ function HomePage() {
     <div>
       <HeaderHome />
       <Services />
-      {/* <AddinsCardsLinks addinsCardsLinks={addinsCardsLinks}></AddinsCardsLinks> */}
+
       <About />
       <Team />
       <ContactUs />

@@ -101,7 +101,11 @@ class SignInFormBase extends Component {
                 placeholder="Password"
               />
             </FormGroup>
-            <button disabled={isInvalid} type="submit">
+            <button
+              className="btn btn-primary btn-md"
+              disabled={isInvalid}
+              type="submit"
+            >
               Sign In
             </button>
 

@@ -225,18 +225,18 @@ header.masthead .intro-text .intro-heading {
   margin: 15px 0;
   text-transform: none;
 }
-#portfolio .portfolio-item {
+addinsCards .addinsCards-item {
   right: 0;
   margin: 0 0 15px;
 }
-#portfolio .portfolio-item .portfolio-link {
+addinsCards .addinsCards-item .addinsCards-link {
   position: relative;
   display: block;
   max-width: 400px;
   margin: 0 auto;
   cursor: pointer;
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+addinsCards .addinsCards-item .addinsCards-link .addinsCards-hover {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -245,14 +245,14 @@ header.masthead .intro-text .intro-heading {
   opacity: 0;
   background: rgba(254, 209, 54, 0.9);
 }
-#portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+addinsCards .addinsCards-item .addinsCards-link .addinsCards-hover:hover {
   opacity: 1;
 }
-#portfolio
-  .portfolio-item
-  .portfolio-link
-  .portfolio-hover
-  .portfolio-hover-content {
+addinsCards
+  .addinsCards-item
+  .addinsCards-link
+  .addinsCards-hover
+  .addinsCards-hover-content {
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -262,40 +262,40 @@ header.masthead .intro-text .intro-heading {
   text-align: center;
   color: #fff;
 }
-#portfolio
-  .portfolio-item
-  .portfolio-link
-  .portfolio-hover
-  .portfolio-hover-content
+addinsCards
+  .addinsCards-item
+  .addinsCards-link
+  .addinsCards-hover
+  .addinsCards-hover-content
   i {
   margin-top: -12px;
 }
-#portfolio
-  .portfolio-item
-  .portfolio-link
-  .portfolio-hover
-  .portfolio-hover-content
+addinsCards
+  .addinsCards-item
+  .addinsCards-link
+  .addinsCards-hover
+  .addinsCards-hover-content
   h3,
-#portfolio
-  .portfolio-item
-  .portfolio-link
-  .portfolio-hover
-  .portfolio-hover-content
+addinsCards
+  .addinsCards-item
+  .addinsCards-link
+  .addinsCards-hover
+  .addinsCards-hover-content
   h4 {
   margin: 0;
 }
-#portfolio .portfolio-item .portfolio-caption {
+addinsCards .addinsCards-item .addinsCards-caption {
   max-width: 400px;
   margin: 0 auto;
   padding: 25px;
   text-align: center;
   background-color: #fff;
 }
-#portfolio .portfolio-item .portfolio-caption h4 {
+addinsCards .addinsCards-item .addinsCards-caption h4 {
   margin: 0;
   text-transform: none;
 }
-#portfolio .portfolio-item .portfolio-caption p {
+addinsCards .addinsCards-item .addinsCards-caption p {
   font-size: 16px;
   font-style: italic;
   margin: 0;
@@ -303,30 +303,30 @@ header.masthead .intro-text .intro-heading {
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-#portfolio * {
+addinsCards * {
   z-index: 2;
 }
 @media (min-width: 767px) {
-  #portfolio .portfolio-item {
+  addinsCards .addinsCards-item {
     margin: 0 0 30px;
   }
 }
-.portfolio-modal .modal-dialog {
+.addinsCards-modal .modal-dialog {
   margin: 1rem;
   max-width: 100vw;
 }
-.portfolio-modal .modal-content {
+.addinsCards-modal .modal-content {
   padding: 100px 0;
   text-align: center;
 }
-.portfolio-modal .modal-content h2 {
+.addinsCards-modal .modal-content h2 {
   font-size: 3em;
   margin-bottom: 15px;
 }
-.portfolio-modal .modal-content p {
+.addinsCards-modal .modal-content p {
   margin-bottom: 30px;
 }
-.portfolio-modal .modal-content p.item-intro {
+.addinsCards-modal .modal-content p.item-intro {
   font-size: 16px;
   font-style: italic;
   margin: 20px 0 30px;
@@ -334,17 +334,17 @@ header.masthead .intro-text .intro-heading {
     Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.portfolio-modal .modal-content ul.list-inline {
+.addinsCards-modal .modal-content ul.list-inline {
   margin-top: 0;
   margin-bottom: 30px;
 }
-.portfolio-modal .modal-content img {
+.addinsCards-modal .modal-content img {
   margin-bottom: 30px;
 }
-.portfolio-modal .modal-content button {
+.addinsCards-modal .modal-content button {
   cursor: pointer;
 }
-.portfolio-modal .close-modal {
+.addinsCards-modal .close-modal {
   position: absolute;
   top: 25px;
   right: 25px;
@@ -353,10 +353,10 @@ header.masthead .intro-text .intro-heading {
   cursor: pointer;
   background-color: transparent;
 }
-.portfolio-modal .close-modal:hover {
+.addinsCards-modal .close-modal:hover {
   opacity: 0.3;
 }
-.portfolio-modal .close-modal .lr {
+.addinsCards-modal .close-modal .lr {
   z-index: 1051;
   width: 1px;
   height: 75px;
@@ -365,7 +365,7 @@ header.masthead .intro-text .intro-heading {
   transform: rotate(45deg);
   background-color: #212529;
 }
-.portfolio-modal .close-modal .lr .rl {
+.addinsCards-modal .close-modal .lr .rl {
   z-index: 1052;
   width: 1px;
   height: 75px;
