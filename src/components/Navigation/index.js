@@ -5,6 +5,7 @@ import SignOutButton from "../SignOut";
 import * as ROUTES from "../../constants/routes";
 import * as ROLES from "../../constants/roles";
 import Nav from "react-bootstrap/Nav";
+import logo from "../../assets/img/cards/logo.png";
 
 const Navigation = () => (
   <AuthUserContext.Consumer>
@@ -23,7 +24,9 @@ const NavigationAuth = ({ authUser }) => (
           className="navbar-brand js-scroll-trigger"
           href="#page-top"
         >
-          <Link to={ROUTES.HOME}>BEVA </Link>
+          <Link to={ROUTES.HOME}>
+            <img className="navbar-brand js-scroll-trigger" src={logo} />{" "}
+          </Link>
         </Nav.Item>
       </div>
       <button
@@ -49,7 +52,7 @@ const NavigationAuth = ({ authUser }) => (
           )}
           <li className="nav-item">
             <Nav.Item as="li" className="nav-link js-scroll-trigger">
-              <Link to={ROUTES.ADDINSDASHBOARD}>Addins Table</Link>
+              <Link to={ROUTES.ADDINSDASHBOARD}> DASHBOARD </Link>
             </Nav.Item>
           </li>
 
@@ -70,7 +73,9 @@ const NavigationNonAuth = () => (
         className="navbar-brand js-scroll-trigger"
         href="#page-top"
       >
-        <Link to={ROUTES.LANDING}>BEVA </Link>
+        <Link to={ROUTES.LANDING}>
+          <img className="navbar-brand js-scroll-trigger" src={logo} />
+        </Link>
       </Nav.Item>
       <button
         className="navbar-toggler navbar-toggler-right"

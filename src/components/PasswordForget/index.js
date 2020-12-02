@@ -7,7 +7,7 @@ import { Row, FormGroup, FormControl } from "react-bootstrap";
 
 const PasswordForgetPage = () => (
   <div style={{ width: "50%", marginLeft: "20%", marginTop: "10%" }}>
-    <h1>PasswordForget</h1>
+    <h3 className="text-center"> Reset your Password</h3>
     <PasswordForgetForm />
   </div>
 );
@@ -64,7 +64,11 @@ class PasswordForgetFormBase extends Component {
                 placeholder="Email Address"
               />
             </FormGroup>
-            <button disabled={isInvalid} type="submit">
+            <button
+              disabled={isInvalid}
+              type="submit"
+              className="btn btn-primary btn-md"
+            >
               Reset My Password
             </button>
 

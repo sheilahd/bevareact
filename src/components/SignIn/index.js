@@ -10,13 +10,12 @@ import { Row, FormGroup, FormControl } from "react-bootstrap";
 const SignInPage = () => (
   <div
     style={{
-      position: "center",
       width: "50%",
       marginLeft: "20%",
       marginTop: "10%",
     }}
   >
-    <h2>SignIn</h2>
+    <h2 className="text-center">Please Sign In</h2>
 
     <SignInForm />
     <div

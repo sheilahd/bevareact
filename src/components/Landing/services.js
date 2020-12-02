@@ -5,9 +5,7 @@ const Services = () => {
         <div className="row">
           <div className="col-lg-12 text-center">
             <h2 className="section-heading text-uppercase">Services</h2>
-            <h3 className="section-subheading text-muted">
-              Lorem ipsum dolor sit amet consectetur.
-            </h3>
+            <h3 className="section-subheading text-muted"></h3>
           </div>
         </div>
         <div className="row text-center">

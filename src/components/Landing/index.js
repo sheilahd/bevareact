@@ -9,46 +9,35 @@ import ContactUs from "./contactUs";
 import Footer from "./footer";
 import "../../assets/css/bootstrap.min.css";
 import "../../assets/css/agency.min.css";
-import image1 from "../../assets/img/about/1.jpg";
-import roof from "../../assets/img/cards/roof.jpeg";
-import blueprint from "../../assets/img/cards/blueprint.jpeg";
-import walls from "../../assets/img/cards/walls.jpg";
-import floor1 from "../../assets/img/cards/floor1.jpeg";
-import bricks from "../../assets/img/cards/bricks.jpg";
-import xyz from "../../assets/img/cards/xyz.jpeg";
+// import roof from "../../assets/img/cards/roof.jpeg";
+// import blueprint from "../../assets/img/cards/blueprint.jpeg";
+// import walls from "../../assets/img/cards/walls.jpg";
+// import floor1 from "../../assets/img/cards/floor1.jpeg";
+// import bricks from "../../assets/img/cards/bricks.jpg";
+// import xyz from "../../assets/img/cards/xyz.jpeg";
+import btn3 from "../../assets/img/cards/btn3-generic.jpg";
 
 function Landing() {
   const addinsCardsLinks = [
     {
       title: "Addin Form",
-      caption: "Help Construction drawings and specifications",
-      picture: blueprint,
+      caption: "Help Construction drawings and specifications.",
+      picture: btn3,
     },
     {
       title: "Roof type selector",
-      caption: "Use the wall type selector to specify the type of roof",
-      picture: roof,
+      caption: "Type selector to specify the type of roof.",
+      picture: btn3,
     },
     {
       title: "Building dimensions",
-      caption: "Building horizontal dimensions are from outer edge of wall",
-      picture: walls,
+      caption: "Building horizontal outer edge of wall.",
+      picture: btn3,
     },
     {
       title: "Slab",
-      caption: "Use the slab checkbox to create the default floor (slab)",
-      picture: floor1,
-    },
-    {
-      title: "Wall type selector",
-      caption: "Use the wall type selector to specify the type of wall",
-      picture: bricks,
-    },
-    {
-      title: "Project base point (PBP)",
-      caption:
-        "Use the axes XYZ of PBP to locate the building in the Revit world",
-      picture: xyz,
+      caption: "Use the slab checkbox for default floor.",
+      picture: btn3,
     },
   ];
 

@@ -127,21 +127,20 @@ class Addins extends Component {
           <br />
 
           {/* <-- Table --> */}
-          <h3> Add-in Requests List: </h3>
-
-          <table className="table table-bordered">
-            <thead>
+          <div className=" header intro-lead-in">Add-in Requests List:</div>
+          <table className="table-responsive-xl table-bordered table-hover">
+            <thead className="table thead text-center">
               <tr>
                 <th>Addin Tester </th>
                 <th>Title </th>
                 <th>Category</th>
                 <th>Discipline</th>
                 <th>Description</th>
-                <th>Compatibility Year</th>
+                <th>Revit Year</th>
                 <th>Actions</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="table tbody">
               {this.state.addins.map((addin, index) => {
                 console.log(addin);
                 return (
@@ -156,17 +155,16 @@ class Addins extends Component {
 
                     <td>
                       <button
-                        className="btn btn-primary "
+                        className="btn btn-secondary btn-sm mx-2"
                         onClick={() =>
                           this.setState({ modalEdit: true, inputsForm: addin })
                         }
                       >
                         Edit
                       </button>
-                      <br />
-                      <br />
+
                       <button
-                        className="btn btn-danger"
+                        className="btn btn-danger btn-sm"
                         onClick={() => this.handleDeleteRequisition(addin)}
                       >
                         Delete
@@ -208,7 +206,7 @@ class Addins extends Component {
                 <br />
                 {/* <-- Radio button --> */}
                 <form onSubmit={this.handleCheckSubmit}>
-                  <h4>Discipline:</h4>
+                  <h5>Discipline:</h5>
                   <div className="radio-check">
                     <label>
                       <br />
@@ -228,18 +226,17 @@ class Addins extends Component {
                   </div>
                   <div className="radio-check">
                     <label>
-                      <br />
                       <input
                         type="radio"
                         name="discipline"
-                        value="Civil "
+                        value="Engineering"
                         checked={
-                          this.state.inputsForm.selectedOption === "Civil "
+                          this.state.inputsForm.selectedOption === "Engineering"
                         }
                         className="form-control"
                         onChange={this.handleOptionChange}
                       />
-                      Civil
+                      Engineering
                     </label>
                   </div>
                 </form>
@@ -256,7 +253,7 @@ class Addins extends Component {
                   onChange={this.handleChange}
                 />
                 <br />
-                <label>Compatibility Year: </label>
+                <label>Revit Compatibility Year: </label>
                 <br />
                 <input
                   type="number"
@@ -318,7 +315,7 @@ class Addins extends Component {
 
                 {/* <-- Radio button --> */}
                 <form onSubmit={this.handleCheckSubmit}>
-                  <h4>discipline:</h4>
+                  <h4>Discipline:</h4>
                   <div className="radio-check">
                     <label>
                       <br />
@@ -342,14 +339,15 @@ class Addins extends Component {
                       <input
                         type="radio"
                         name="discipline"
-                        value="Civil "
+                        value="Engineering "
                         checked={
-                          this.state.inputsForm.selectedOption === "Civil "
+                          this.state.inputsForm.selectedOption ===
+                          "Engineering "
                         }
                         className="form-control"
                         onChange={this.handleOptionChange}
                       />
-                      Civil
+                      Engineering
                     </label>
                   </div>
                 </form>
@@ -365,7 +363,7 @@ class Addins extends Component {
                   onChange={this.handleChange}
                 />
                 <br />
-                <label>Compatibility Year: </label>
+                <label> Revit Compatibility Year: </label>
                 <br />
                 <input
                   type="number"

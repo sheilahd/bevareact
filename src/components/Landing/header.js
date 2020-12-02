@@ -9,7 +9,7 @@ function Header() {
         <div className="container">
           <div className="intro-text">
             <div className="intro-lead-in">Welcome To Our Studio!</div>
-            <div className="intro-heading text-uppercase">BEVA</div>
+
             <h4 className="section-subheading intro-lead-in">
               Revit(BIM) Development Services
             </h4>

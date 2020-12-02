@@ -14,7 +14,7 @@ const SignUpPage = () => (
       marginTop: "10%",
     }}
   >
-    <h2>SignUp</h2>
+    <h2 className="text-center">Please Sign Up</h2>
     <SignUpForm />
   </div>
 );

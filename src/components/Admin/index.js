@@ -15,7 +15,7 @@ const AdminPage = () => (
       marginTop: "10%",
     }}
   >
-    <h4>List of Testers and Requests: </h4>
+    <h4 className="text-center">List of Users and Requests: </h4>
 
     <Switch>
       <Route exact path={ROUTES.ADMIN_DETAILS} component={UserItem} />
@@ -113,27 +113,29 @@ class UserListBase extends Component {
                 Details
               </Link> */}
             </span>
-            <table className="table table-bordered">
-              <thead>
-                <tr>
-                  <th> Request Title </th>
-                  <th> Category</th>
-                  <th> Description</th>
-                </tr>
-              </thead>
-              <tbody>
-                {user.addins &&
-                  user.addins.map((addin) => {
-                    return (
-                      <tr>
-                        <td> {addin.title} </td>
-                        <td>{addin.category}</td>
-                        <td>{addin.description}</td>
-                      </tr>
-                    );
-                  })}
-              </tbody>
-            </table>
+            <div className="table-responsive-md">
+              <table className="table-bordered table-secondary ">
+                <thead className="table-dark text-center">
+                  <tr>
+                    <th> Request Title </th>
+                    <th> Category</th>
+                    <th> Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {user.addins &&
+                    user.addins.map((addin) => {
+                      return (
+                        <tr>
+                          <td> {addin.title} </td>
+                          <td>{addin.category}</td>
+                          <td>{addin.description}</td>
+                        </tr>
+                      );
+                    })}
+                </tbody>
+              </table>
+            </div>
           </ul>
         ))}
       </div>

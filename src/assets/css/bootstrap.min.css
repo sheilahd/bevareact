@@ -3881,8 +3881,8 @@ input[type="submit"].btn-block {
 }
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  /* padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem; */
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
@@ -3911,8 +3911,8 @@ input[type="submit"].btn-block {
 }
 .navbar-text {
   display: inline-block;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  /* padding-top: 0.5rem;
+  padding-bottom: 0.5rem; */
 }
 .navbar-collapse {
   -ms-flex-preferred-size: 100%;
@@ -3923,7 +3923,7 @@ input[type="submit"].btn-block {
   align-items: center;
 }
 .navbar-toggler {
-  padding: 0.25rem 0.75rem;
+  /* padding: 0.25rem 0.75rem; */
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
