@@ -4,9 +4,7 @@ const Footer = () => {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-4">
-            <span className="copyright">
-              Copyright &copy; CodeTheDream 2020
-            </span>
+            <span className="copyright">Copyright &copy; BevaCode 2020</span>
           </div>
           <div className="col-md-4">
             <ul className="list-inline social-buttons">

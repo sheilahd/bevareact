@@ -1,4 +1,26 @@
-const ContactUs = () => {
+import { React } from "react";
+import emailjs from "emailjs-com";
+
+export default function ContactUs() {
+  function sendEmail(e) {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_jtirv4x",
+        "template_wh9cr7l",
+        e.target,
+        "user_fK90JzbEJTGMv13DAxxP1"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
+
   return (
     <section className="page-section" id="contact">
       <div className="container">
@@ -79,5 +101,4 @@ const ContactUs = () => {
       </div>
     </section>
   );
-};
-export default ContactUs;
+}

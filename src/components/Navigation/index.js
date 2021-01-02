@@ -118,11 +118,11 @@ const NavigationNonAuth = () => (
             </a>
           </li>
 
-          <Nav.Item as="li" className="nav-link js-scroll-trigger">
+          {/* <Nav.Item as="li" className="nav-link js-scroll-trigger">
             <Link to={ROUTES.SIGN_IN} className="btn btn-primary btn-md">
               Sign In
             </Link>
-          </Nav.Item>
+          </Nav.Item> */}
         </ul>
       </div>
     </div>

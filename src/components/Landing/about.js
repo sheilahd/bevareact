@@ -39,9 +39,8 @@ const About = () => {
               <li className="timeline-inverted">
                 <div className="timeline-image">
                   <h4>
-                    Architecture
                     <br />
-                    Engineering
+                    Architecture
                     <br />
                   </h4>
                 </div>
@@ -63,9 +62,9 @@ const About = () => {
               <li>
                 <div className="timeline-image">
                   <h4>
-                    Library
+                    Web
                     <br />
-                    Development
+                    Design
                     <br />
                   </h4>
                 </div>
