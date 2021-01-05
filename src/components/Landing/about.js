@@ -6,8 +6,9 @@ const About = () => {
           <div className="col-lg-12 text-center">
             <h2 className="section-heading text-uppercase">About</h2>
             <h3 className="section-subheading text-muted">
-              A family owned small business partnership providing code and web
-              development for all business trades.
+              A family owned small business partnership providing desktop and
+              web software development for all trades. Across all industries, we
+              give you the power to automate and accelerate results.
             </h3>
           </div>
         </div>

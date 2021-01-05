@@ -36,7 +36,9 @@ export default ({ addinsCardsLinks }) => {
                   Currently on Testing:
                 </h5>
                 <div class="addinsCards-caption-subheading text-muted">
-                  Creates elevations collecting user input.
+                  Creates a new Revit model by collecting data from the user.
+                  <br />
+                  Available in (link to Autodesk Store – to buy).
                 </div>
               </div>
             </div>
@@ -66,37 +68,37 @@ export default ({ addinsCardsLinks }) => {
                       <div class="modal-body">
                         <h4> EZBuild</h4>
                         <p class="item-intro text-muted">
-                          Creates a new building by collecting data from the
-                          user in a form.
+                          Creates a new Revit model by collecting data from the
+                          user.
                         </p>
                         <img class="img-fluid d-block mx-auto" src={btn1} />
                         <p>
-                          Roof type selector Use the wall type selector to
-                          specify the type of roof, such as ' Generic -12" ' or
-                          use the default choice and do the changes later. Slab
-                          Use the slab checkbox to create the default floor
-                          (slab) ' Generic -12" ' at the specified height Z-axis
-                          in Project Base Point (PBP). Project base point (PBP)
-                          Use the axes XYZ of PBP to locate the building in the
-                          Revit world. PBP will be placed at the lower left
-                          corner of the building and at the top of the slab.
-                          Building dimensions Building horizontal dimensions are
-                          from outer edge of wall to outer edge of wall.
-                          Building height is from top of slab to top of wall.
+                          This Revit add-in command will help you speed up your
+                          modeling tasks by automating creation and shortening
+                          your modeling workflow substantially. Filling out its
+                          form containing location coordinates, building
+                          dimensions, walls and roof type results in a one-click
+                          3D model built as described in the elements choices.
+                          <br />
+                          Current version: 1.0
                         </p>
                         <ul class="list-inline">
-                          <li>Date: January 2020</li>
-                          <li>Client: Hazen</li>
-                          <li>Category: Civil Enginering</li>
+                          <li>Date: January 2021</li>
+                          <li>Client: Multiple. International</li>
+                          <li>Category: Architecture</li>
+                          <li>
+                            Available in Autodesk Store within EZevit add-in
+                            bundle (link to Autodesk Store – to buy)
+                          </li>
                         </ul>
-                        <button
+                        {/* <button
                           class="btn btn-primary"
                           data-dismiss="modal"
                           type="button"
                         >
                           <i class="fa fa-times mr-1"></i>
                           Close Project
-                        </button>
+                        </button> */}
                       </div>
                     </div>
                   </div>
@@ -125,7 +127,12 @@ export default ({ addinsCardsLinks }) => {
                   Currently on Testing:
                 </h5>
                 <div class="addinsCards-caption-subheading text-muted">
-                  Creates Forms using data from user.
+                  Creates a new set of sheets including the title block and
+                  scaled views with view templates by collecting data from the
+                  user.
+                  <br />
+                  Available in (link to Autodesk Store – to buy)
+                  <br />
                 </div>
               </div>
             </div>
@@ -155,28 +162,37 @@ export default ({ addinsCardsLinks }) => {
                       <div class="modal-body">
                         <h4> EZForms</h4>
                         <p class="item-intro text-muted">
-                          Creates a new building by collecting data from the
-                          user in a form.
+                          Creates a new set of sheets including title block and
+                          scaled views with view templates by collecting data
+                          from the user.
                         </p>
                         <img class="img-fluid d-block mx-auto" src={btn2} />
                         <p>
-                          Form type selector Use the wall type selector to
-                          specify the type of roof, such as ' Generic -12" ' or
-                          use the default choice and do the changes later. Slab
+                          This Revit add-in command will help you speed up your
+                          annotation process by automating the creation of your
+                          sheet set. It also will neatly populate the sheets
+                          with the previously selected plans and views including
+                          its view templates.
+                          <br />
+                          Current version: 1.0
                         </p>
                         <ul class="list-inline">
-                          <li>Date: January 2020</li>
-                          <li>Client: Hazen</li>
-                          <li>Category: Civil Enginering</li>
+                          <li>Date: January 2021</li>
+                          <li>Client: Multiple. International</li>
+                          <li>Category: Multi-discipline</li>
+                          <li>
+                            Available in Autodesk Store within EZevit add-in
+                            bundle (link to Autodesk Store – to buy)
+                          </li>
                         </ul>
-                        <button
+                        {/* <button
                           class="btn btn-primary"
                           data-dismiss="modal"
                           type="button"
                         >
                           <i class="fa fa-times mr-1"></i>
                           Close Project
-                        </button>
+                        </button> */}
                       </div>
                     </div>
                   </div>
