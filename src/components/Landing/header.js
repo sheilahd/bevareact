@@ -14,7 +14,7 @@ function Header() {
               <img className="navbar-brand js-scroll-trigger" src={logo} />{" "}
             </div>
             <h4 className="section-subheading intro-lead-in">
-              Revit(BIM) Development Services
+              Software Development Services
             </h4>
             {/* 
             <button
