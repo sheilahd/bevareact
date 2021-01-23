@@ -5,7 +5,7 @@ import SignOutButton from "../SignOut";
 import * as ROUTES from "../../constants/routes";
 import * as ROLES from "../../constants/roles";
 import Nav from "react-bootstrap/Nav";
-import logo from "../../assets/img/cards/logo.png";
+import logoletters from "../../assets/img/cards/logoletters.png";
 
 const Navigation = () => (
   <AuthUserContext.Consumer>
@@ -25,7 +25,7 @@ const NavigationAuth = ({ authUser }) => (
           href="#page-top"
         >
           <Link to={ROUTES.HOME}>
-            <img className="navbar-brand js-scroll-trigger" src={logo} />{" "}
+            <img className="navbar-brand js-scroll-trigger" src={logoletters} />{" "}
           </Link>
         </Nav.Item>
       </div>
@@ -74,7 +74,7 @@ const NavigationNonAuth = () => (
         href="#page-top"
       >
         <Link to={ROUTES.LANDING}>
-          <img className="navbar-brand js-scroll-trigger" src={logo} />
+          <img className="navbar-brand js-scroll-trigger" src={logoletters} />
         </Link>
       </Nav.Item>
       <button

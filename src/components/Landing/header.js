@@ -1,6 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
-import logo from "../../assets/img/cards/logo.png";
+import logowhite from "../../assets/img/cards/logowhite.png";
 
 function Header() {
   const history = useHistory();
@@ -11,7 +11,7 @@ function Header() {
           <div className="intro-text">
             <div className="intro-lead-in">Welcome To Our Studio!</div>
             <div>
-              <img className="navbar-brand js-scroll-trigger" src={logo} />{" "}
+              <img className="navbar-brand js-scroll-trigger" src={logowhite} />{" "}
             </div>
             <h4 className="section-subheading intro-lead-in">
               Software Development Services

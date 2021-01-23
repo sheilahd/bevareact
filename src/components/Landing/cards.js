@@ -185,14 +185,14 @@ export default ({ addinsCardsLinks }) => {
                             bundle (link to Autodesk Store – to buy)
                           </li>
                         </ul>
-                        {/* <button
+                        <button
                           class="btn btn-primary"
                           data-dismiss="modal"
                           type="button"
                         >
                           <i class="fa fa-times mr-1"></i>
                           Close Project
-                        </button> */}
+                        </button>
                       </div>
                     </div>
                   </div>
