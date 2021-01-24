@@ -6,21 +6,19 @@ function Header() {
   const history = useHistory();
   return (
     <React.Fragment>
-      <div className="page-section" id="header">
-        <header className="masthead">
-          <div className="container">
-            <div className="intro-text">
-              <div className="intro-lead-in">Welcome To Our Studio!</div>
-              <div>
-                <img className="navbar-brand js-scroll-trigger" src={logo1} />{" "}
-              </div>
-              <h4 className="section-subheading intro-lead-in">
-                Software Development Services
-              </h4>
+      <header className="masthead">
+        <div className="container">
+          <div className="intro-text">
+            <div className="intro-lead-in">Welcome To Our Studio!</div>
+            <div>
+              <img className="navbar-brand js-scroll-trigger" src={logo1} />{" "}
             </div>
+            <h4 className="section-subheading intro-lead-in">
+              Software Development Services
+            </h4>
           </div>
-        </header>
-      </div>
+        </div>
+      </header>
     </React.Fragment>
   );
 }
