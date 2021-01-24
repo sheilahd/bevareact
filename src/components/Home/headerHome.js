@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
-import { withFirebase } from "../Firebase";
 
 function HeaderHome({ firebase }) {
   const [currentUser, setCurrentUser] = useState();
@@ -42,4 +41,4 @@ function HeaderHome({ firebase }) {
   );
 }
 
-export default withFirebase(HeaderHome);
+export default HeaderHome;

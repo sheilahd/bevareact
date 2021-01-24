@@ -1,21 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { AuthUserContext } from "../Session";
-import SignOutButton from "../SignOut";
+
 import * as ROUTES from "../../constants/routes";
-import * as ROLES from "../../constants/roles";
+
 import Nav from "react-bootstrap/Nav";
 import logoletters from "../../assets/img/cards/logoletters.png";
 
 const Navigation = () => (
-  <AuthUserContext.Consumer>
-    {(authUser) =>
-      authUser ? <NavigationAuth authUser={authUser} /> : <NavigationNonAuth />
-    }
-  </AuthUserContext.Consumer>
-);
-
-const NavigationAuth = ({ authUser }) => (
   <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div className="container">
       <div>
@@ -43,22 +34,11 @@ const NavigationAuth = ({ authUser }) => (
       </button>
       <div className="collapse navbar-collapse" id="navbarResponsive">
         <ul className="navbar-nav text-uppercase ml-auto">
-          {!!authUser.roles[ROLES.ADMIN] && (
-            <li className="nav-item">
-              <Nav.Item as="li" className="nav-link js-scroll-trigger">
-                <Link to={ROUTES.ADMIN}>Admin</Link>
-              </Nav.Item>
-            </li>
-          )}
-          <li className="nav-item">
-            <Nav.Item as="li" className="nav-link js-scroll-trigger">
-              <Link to={ROUTES.ADDINSDASHBOARD}> DASHBOARD </Link>
-            </Nav.Item>
-          </li>
+          <Link to={ROUTES.LANDING}>
+            <img className="navbar-brand js-scroll-trigger" src={logoletters} />
+          </Link>
 
-          <Nav.Item as="li" className="nav-link js-scroll-trigger">
-            <SignOutButton />
-          </Nav.Item>
+          <Nav.Item as="li" className="nav-link js-scroll-trigger"></Nav.Item>
         </ul>
       </div>
     </div>
@@ -72,11 +52,7 @@ const NavigationNonAuth = () => (
         as="li"
         className="navbar-brand js-scroll-trigger"
         href="#page-top"
-      >
-        <Link to={ROUTES.LANDING}>
-          <img className="navbar-brand js-scroll-trigger" src={logoletters} />
-        </Link>
-      </Nav.Item>
+      ></Nav.Item>
       <button
         className="navbar-toggler navbar-toggler-right"
         type="button"
@@ -117,12 +93,6 @@ const NavigationNonAuth = () => (
               Contact
             </a>
           </li>
-
-          {/* <Nav.Item as="li" className="nav-link js-scroll-trigger">
-            <Link to={ROUTES.SIGN_IN} className="btn btn-primary btn-md">
-              Sign In
-            </Link>
-          </Nav.Item> */}
         </ul>
       </div>
     </div>
